@@ -1,0 +1,122 @@
+/* .border1{
+    border: 2px solid blue;
+} */
+.border2 {
+    /* border: 2px solid blue; */
+    margin-top: 75px;
+}
+.main-container {
+    height: 100%;
+}
+header {
+    height: 180px;
+}
+section {
+    min-height: 425px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    margin-top: 20px;
+}
+header nav ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form  input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 50px;
+    max-width: 600px;
+    width: 35em;
+    padding: 20px 10px;
+}
+textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 50px;
+    max-width: 600px;
+    width: 35em;
+    height: 175px;
+    padding: 20px 10px;
+
+}
+section:nth-of-type(1) div.maintext {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    /* width: fit-content; */
+    font-size: 45px;
+    /* letter-spacing: .2em; */
+    margin-top: 20px;    
+    margin-bottom: 20px;
+}
+footer {
+    background-color:  rgb(26, 25, 25);
+    width: 100%;
+    height: 125px;
+}
+footer p {
+    color: white;
+    padding-left: 15%;
+    padding-top: 40px;
+
+}
+li{
+    list-style-type: none;
+}
+@media (max-width: 600px) {
+    /* body {
+        background-color: red;
+    } */
+    header nav ul {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    form input {
+        max-width: 75%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    form {
+        width: 100%;
+    }
+    textarea {
+        max-width: 75%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

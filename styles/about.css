@@ -1,0 +1,119 @@
+/* .border1{
+    border: 2px solid blue;
+}
+.border2 {
+    border: 2px solid blue;
+} */
+.main-container {
+    height: 100%;
+}
+header {
+    height: 180px;
+}
+/* section {
+    min-height: 425px;
+} */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    margin-top: 20px;
+}
+header nav ul {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-last-of-type(1) div.maintext {
+    background-color: black;
+    color: white;
+    font-size: 35px;
+    letter-spacing: .5em;
+    margin-top: 20px;   
+    margin-bottom: 20px;
+}
+section:nth-last-of-type(1) div.centerphoto {
+    border: 2px solid black;
+}
+section:nth-last-of-type(1) div.centertext {
+    text-align: center;
+}
+footer {
+    background-color:  rgb(26, 25, 25);
+    width: 100%;
+    height: 125px;
+}
+footer p {
+    color: white;
+    padding-left: 15%;
+    padding-top: 40px;
+
+}
+li {
+    list-style: none;
+}
+@media (max-width: 480px) {
+    .center {
+        margin-left: 25px;
+    }
+    .centerphoto img {
+        width: 350px;      
+    }
+    li {
+        list-style: none;
+    }
+    h1 {
+        width: 300px;
+        /* width: fit-content; */
+        font-size: medium;
+        letter-spacing: 0;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .maintext {
+        
+    }
+    footer {
+        background-color:  rgb(26, 25, 25);
+        width: 110%;
+        height: 125px;
+        margin-left: -10px;
+        /* overflow: hidden; */
+    }
+    li {
+        list-style: none;
+    }
+}
+@media (max-width: 768px) and (min-width: 481px){
+    .maintext h1{
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: 0.3;
+        /* padding: .5em ; */
+        min-width: 600px;
+    }
+    li {
+        list-style: none;
+    }
+    footer {
+        background-color:  rgb(26, 25, 25);
+        width: 110%;
+        height: 125px;
+        margin-left: -10px;
+        /* overflow: hidden; */
+    }
+}
